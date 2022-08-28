@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/item_country_rootView"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_country_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="@dimen/spacing_24dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        android:layout_marginBottom="@dimen/spacing_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/item_country_nameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        android:layout_marginEnd="@dimen/spacing_8dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="One Pice"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_country_imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_country_cityTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Jaban"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_18sp"
+        app:layout_constraintEnd_toEndOf="@+id/item_country_nameTV"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/item_country_nameTV"
+        app:layout_constraintTop_toBottomOf="@+id/item_country_nameTV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
